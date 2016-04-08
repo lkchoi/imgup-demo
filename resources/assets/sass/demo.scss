@@ -1,0 +1,30 @@
+/* make the button(s) lighter for this page only */
+.btn-default {
+    background: #e9e9e9;
+}
+a {
+    color: #999;
+
+    &:hover {
+        color: #555;
+    }
+}
+img.preview {
+    float:left;
+    max-width:100px;
+    max-height:100px;
+    margin-right: 1ex;
+}
+.img-box {
+    height: 100px;
+    width: 100px;
+    float: left;
+}
+.photo-box {
+    padding: 1ex;
+}
+
+.tn-top-bar {
+    background: #fafafa;
+    padding: 0px 5px;
+}

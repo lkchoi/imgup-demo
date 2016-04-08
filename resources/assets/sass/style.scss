@@ -1,0 +1,419 @@
+/*
+ * Application-Specific Styling Rules
+ */
+
+ /**
+  * General purpose
+  */
+.noshow { display: none; }
+.space-xs-left { margin-left: 0.5ex; }
+.space-sm-left { margin-left: 1ex; }
+.space-md-left { margin-left: 1em; }
+.space-lg-left { margin-left: 2em; }
+.space-xl-left { margin-left: 3em; }
+.space-xs-right { margin-right: 0.5ex; }
+.space-sm-right { margin-right: 1ex; }
+.space-md-right { margin-right: 1em; }
+.space-lg-right { margin-right: 2em; }
+.space-xl-right { margin-right: 3em; }
+.space-xs-top { margin-top: 0.5ex; }
+.space-sm-top { margin-top: 1ex; }
+.space-md-top { margin-top: 1em; }
+.space-lg-top { margin-top: 2em; }
+.space-xl-top { margin-top: 3em; }
+.space-xs-bottom { margin-bottom: 0.5ex; }
+.space-sm-bottom { margin-bottom: 1ex; }
+.space-md-bottom { margin-bottom: 1em; }
+.space-lg-bottom { margin-bottom: 2em; }
+.space-xl-bottom { margin-bottom: 3em; }
+img.center { margin-left:auto; margin-right:auto; }
+
+/**
+ * center-align text at certain viewport sizes
+ */
+@media (max-width: 767px) { .center-xs { text-align:center !important; } }
+@media (min-width: 768px) and (max-width: 991px) { .center-sm { text-align:center !important; } }
+@media (min-width: 992px) and (max-width: 1199px) { .center-md { text-align:center !important; } }
+@media (min-width: 1200px) { .center-lg { text-align:center !important; } }
+
+/**
+ * margin fix
+ */
+@media (max-width: 767px) { .center-xs a { margin-left: -32px; } }
+@media (min-width: 768px) and (max-width: 991px) { .center-sm a { margin-left: -32px; } }
+@media (min-width: 992px) and (max-width: 1199px) { .center-md a { margin-left: -32px; } }
+@media (min-width: 1200px) { .center-lg a { margin-left: -32px; } }
+
+/**
+ * left-align text at certain 
+ */
+@media (max-width: 767px) { .left-xs { text-align:left !important; } }
+@media (min-width: 768px) and (max-width: 991px) { .left-sm { text-align:left !important; } }
+@media (min-width: 992px) and (max-width: 1199px) { .left-md { text-align:left !important; } }
+@media (min-width: 1200px) { .left-lg { text-align:left !important; } }
+
+/**
+ * right-align text at certain 
+ */
+@media (max-width: 767px) { .right-xs { text-align:right !important; } }
+@media (min-width: 768px) and (max-width: 991px) { .right-sm { text-align:right !important; } }
+@media (min-width: 992px) and (max-width: 1199px) { .right-md { text-align:right !important; } }
+@media (min-width: 1200px) { .right-lg { text-align:right !important; } }
+
+
+/**
+ * Override colors
+ */
+.panel-success .panel-heading {
+  background: #20815F!important; /*dark green*/
+}
+.panel-success .panel-heading .close {
+  margin-top: 8px;
+  color: #fff!important;
+  opacity: 1.0;
+  text-shadow: none;
+}
+
+
+/**
+ * X-Editable "Links"
+ */
+a.editable {
+  color: #333;
+}
+a.editable:hover {
+  color: #666;
+}
+.editable-container .btn {
+  min-height: 38px;
+}
+
+.editable-input > select.input-sm {
+  min-width:10em;
+  height: 38px!important;
+  line-height: 20.25px!important;
+}
+
+
+/**
+ * Sortable Lists
+ */
+.sortable {
+  list-style: none;
+}
+ul.inline li {
+  display: inline-block;
+}
+.sortable li {
+  margin: 4px;
+  padding: 1px;
+  float: left;
+  text-align: center;
+  height: 237px;
+  width: 212px;
+  background: #fff;
+  border:1px #eee solid;
+}
+.sortable li img {
+  margin-left:auto;
+  margin-right:auto;
+  max-height: 212px;
+  max-width: 100%;
+}
+.sortable li .btn-rm {
+  position:relative;
+  bottom:1.7em;
+  background:rgba(255,255,255,0.6);
+  border:none;
+}
+
+
+/**
+ * Dropzone
+ */
+.dropzone {
+  font-size: 2em;
+  /*font-family: 'Slabo', 'Fjalla One', cursive;*/
+  background: url('../img/bg/ps_neutral.png');
+  margin-left:auto;
+  margin-right:auto;
+}
+
+
+/**
+ * Popover
+ */
+.popover-title,
+.popover-content {
+  font-size: 18px;
+}
+
+
+/**
+ * User Icon
+ */
+.avatar {
+  display:inline-block;
+  width: 35px;
+  padding: 2px;
+  border: 1px #555 solid;
+}
+.avatar:hover {
+  opacity:0.8;
+}
+
+
+/**
+ * Sticky Footer
+ */
+ html {
+   position: relative;
+   min-height: 100%;
+ }
+ body {
+   /* 
+ * M
+  * rgin bottom by footer height
+  */
+   margin-bottom: 60px!important;
+ }
+.footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  /* *
+Set
+ * the fixed height of the footer here
+ */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+.footer .copyright {
+  position: relative;
+  bottom: -6px;
+}
+
+
+/**
+ * Thumbnail
+ */
+.tn-box { margin: 4px 10px; }
+.tn-box-sm { height: 110px; width: 110px; }
+.tn-box-md { height: 160px; width: 160px; }
+.tn-box-lg { height: 210px; width: 210px; }
+.tn-box-xl { height: 260px; width: 260px; }
+.tn-box-sm img, .tn-sm { max-height: 100px; max-width: 100px; }
+.tn-box-md img, .tn-md { max-height: 150px; max-width: 150px; }
+.tn-box-lg img, .tn-lg { max-height: 200px; max-width: 200px; }
+.tn-box-xl img, .tn-xl { max-height: 250px; max-width: 250px; }
+.tn-center { margin-left:auto; margin-right:auto; }
+.tn-right { margin-left:auto; margin-right:0px; }
+.tn-left { margin-left:0px; margin-right:auto; }
+
+/**
+ * Photo Title/Description
+ */
+.photo-box .editable { text-decoration: none; border: 1px #fff dashed; }
+
+/**
+ * Navbar Search Form
+ */
+#search-form input {
+  color: #eee;
+  background: #333;
+  border-radius: 4px 0px 0px 4px;
+}
+#search-form button.btn.btn-md {
+  background: #555;
+  border-radius: 0px 4px 4px 0px;
+  padding: 7px 8px!important;
+  position: relative;
+  left: -5px;
+}
+
+/**
+ * Search Results
+ */
+.search-result { padding: 10px; }
+.search-result a { color: #333; }
+.search-result a:hover { text-decoration:underline; }
+
+/**
+ * AddThis Styling Override
+ */
+.at-share-btn {
+  border-radius: 3em;
+  background: #555!important;
+}
+
+
+/**
+ * Header
+ */
+.header .search i,
+.header.transparent.opaque .inner .tools .signup,
+.header.transparent.opaque .inner .tools a,
+.header.transparent.opaque .inner a {
+  color: #ccc;
+}
+.header .search i:hover,
+.header.transparent.opaque .inner .tools .signup:hover,
+.header.transparent.opaque .inner .tools a:hover,
+.header.transparent.opaque .inner a:hover {
+  color: #fff;
+}
+.header.transparent.opaque .inner .tools .signup
+{
+  border: 1px #999 solid;
+}
+.header.transparent .inner,
+.header.sticky .inner {
+  height:80px;
+}
+.header .logo,
+.header.sticky .tools a {
+  margin-top:16px;
+  font-size: 14px;
+}
+.menu {
+  vertical-align: top;
+  margin-top: 24px;
+}
+.menu ul li a {
+  padding: 0px 10px !important;
+}
+.header a {
+  font-weight: 300 !important;
+}
+.header .tools.group {
+  margin-top: 0px;
+}
+
+@media (max-width: 1024px) {
+  .header .inner .search {
+    margin-top: 22px;
+  }
+}
+
+/**
+ * Transparent Header (top of user profile page)
+ */
+.header.transparent .menu {
+  margin-top: 40px !important;
+}
+.header.transparent .logo img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80px;
+}
+.header.transparent .tools.headerloggedin {
+  margin-top: 5px;
+}
+.headerpreauth
+{
+  margin-top: 6px !important;
+}
+
+/**
+ * Opaque Header (below jumbotron on user profile page)
+ */
+.header.transparent.opaque .menu {
+  margin-top: 24px !important;
+}
+.header.transparent.opaque .tools {
+  margin-top: 20px !important;
+}
+.header.transparent.opaque .tools a {
+  margin-top: 0px !important;
+}
+.header.transparent.opaque .inner {
+  background: #000;
+  border-bottom: 0px;
+}
+
+/**
+ * Replace the square logo with the default rectangular one
+ */
+.header.transparent.opaque .logo {
+  background: url('/img/logo/white-on-black-144x45.png');
+  width: 144px;
+  height: 45px;
+}
+.header.transparent.opaque .logo img {
+  display:none;
+}
+
+.tagcloud a {
+  border-bottom: 1px #999 dashed;
+}
+.tagcloud a:hover {
+  text-decoration: none;
+  border-bottom: 1px #999 solid;
+}
+
+/**
+ * Bordered images
+ */
+.tn-box img,
+.featured-img img,
+div#cover_image img {
+}
+
+.tn-box.pull-left img { margin-left: auto; }
+.tn-box.pull-right img { margin-right: auto; }
+
+/*
+Nudges logo to right
+ */
+@media (max-width: 1199px) { 
+  .logo {
+    position: relative;
+    left: 1.1em; 
+
+  }
+}
+
+/**
+ * auto crops profile images to aspect ratio
+ */
+.avatar
+{
+  object-fit: cover;
+  height: 35px;
+}
+.propic
+{
+  object-fit: cover;
+}
+
+
+/**
+ * make buttons lighter
+ */
+.btn-default {
+    background: #e9e9e9;
+}
+a {
+    color: #999;
+
+    &:hover {
+        color: #555;
+    }
+}
+img.preview {
+    float:left;
+    max-width:100px;
+    max-height:100px;
+    margin-right: 1ex;
+}
+.img-box {
+    height: 100px;
+    width: 100px;
+    float: left;
+}
+.photo-box {
+    padding: 1ex;
+}
+.delete-link:hover {
+    color: #c32;
+}

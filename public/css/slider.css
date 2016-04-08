@@ -1,0 +1,122 @@
+@media screen and (min-width: 800px) {
+  .image-tools
+  {
+    padding-top: 2ex;
+  }
+}
+.meta div
+{
+  /*padding-top: 0.5ex;*/
+}
+.page
+{
+  margin-top: -1px;
+}
+.taxonomy .text-muted
+{
+  font-size: 1em !important;
+}
+.left-arrow, .right-arrow
+{
+  vertical-align: middle;
+  /*height: 300px;*/
+  font-size: 3em;
+  text-align: center;
+  margin-top: 264px;
+}
+.right-arrow
+{
+  text-align: left;
+}
+.left-arrow
+{
+  text-align: right;
+}
+.like, .unlike, .counter
+{
+  font-size: 1.1em !important;
+  color: #fff !important;
+}
+.caption
+{
+  width: 93%;
+  height: 42px;
+  text-transform: none !important;
+  font-size: 0.75em !important;
+  line-height: 30px;
+}
+.ms-portfolio
+{
+  height: 64px !important;
+  /*margin-top: 91% !important;*/
+}
+.ms-portfolio div h5
+{
+  text-align: center;
+}
+.pagination
+{
+  padding-left: 1ex;
+}
+.readmore
+{
+  max-height: 3.2em;
+}
+.meta
+{
+  font-size: 1em !important;
+}
+.meta .text-muted a
+{
+  color: #fff !important;
+}
+.meta a i{
+    font-size: 1.1em !important;
+    margin-right: 4px;
+}
+@media screen and (max-width: 500px) {
+  .caption
+  {
+    width: 90%;
+    height: 45px;
+    font-size: 0.75em !important;
+  }
+  .meta
+  {
+    padding-top: 0px;
+  }
+  .taxonomy
+  {
+    padding-bottom: 2ex;
+  }
+  .image-tools
+  {
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+  .ms-portfolio
+  {
+    margin-top: 90% !important;
+  }
+  .quickview-modal .modal-dialog
+  {
+    width: 95%;
+  }
+  .image-tools
+  {
+    font-size: 1.5em;
+    background: none;
+  }
+  .exit-off-canvas
+  {
+    margin-left: 260px;
+  }
+  .pagination
+  {
+    margin: 0px;
+  }
+  .readmore
+  {
+    max-height: 3.2em;
+  }
+}

@@ -1,0 +1,104 @@
+#comments_ul
+{
+  padding-top: 2em;
+}
+#prev, #next{
+  height: 100%;
+  z-index: 99999999;
+}
+#next {
+  left: 100%;
+  float: right;
+}
+.arrows
+{
+  height: 100%;
+  position:absolute;
+  top: 50%;
+}
+
+.read-more-link,
+.read-less-link {
+ text-align:right;
+}
+
+/* viewport md or larger */
+@media (min-width: 992px) {
+ /* set the size of the square profile image to half */
+ #square_profile_image {
+  max-width: 50%;
+  float:left;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+#square_profile_image_form {
+  max-width: 50%;
+  float: left;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+#square_profile_image_form #square_profile_image {
+  max-width:100%;
+}
+}
+@media (max-width: 991px) {
+ #images-container li {
+  position: static !important;
+  width: 50%;
+  display:inline;
+}
+#images-container li:nth-child(odd) {
+  clear: both;
+}
+#images-container {
+  height: auto !important;
+}
+}
+
+.blog .grid-view .post, .search-results .grid-view .post {
+  max-width: 600px !important;
+  width: 100%;
+}
+
+.sidebar .widget {
+     margin-bottom: 0px; 
+}
+
+.caption
+{
+  width: 93%;
+  margin-top: 95% !important;
+  height: 80px;
+
+}
+.ms-portfolio
+{
+  margin-top: 93% !important;
+}
+.ms-portfolio div h5
+{
+  text-align: center;
+}
+.quickview-modal .modal-dialog
+{
+  max-width: 1200px;
+  width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  .caption
+  {
+    width: 90%;
+    margin-top: 95% !important;
+    height: 80px;
+  }
+
+  .ms-portfolio
+  {
+    margin-top: 90% !important;
+  }
+  .quickview-modal .modal-dialog
+  {
+    width: 95%;
+  }
+}

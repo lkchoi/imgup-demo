@@ -1,0 +1,131 @@
+.hero-slider .ms-layer.mobile-hero
+{
+	left: 10% !important;
+	/*margin-top: 0em;*/
+	margin-top: -1.75em;
+	width: 250px !important;
+
+}
+.hero-slider .ms-layer.mobile-hero-image
+{
+	left: 10% !important;
+	margin-top: -3.5em !important;
+}
+.hero-slider .ms-layer.blacktext a
+{
+	color: #fff;
+}
+.usersocial
+{
+	height: 10px !important;
+	font-size: 1.5em;
+}
+.social-icons a
+{
+	padding-left: 0.5ex;
+}
+.hero-slider div.ms-layer.blacktext
+{
+	left: 33% !important;
+	top: 51% !important;
+}
+.instablock .container
+{
+	margin-right: 0px;
+	margin-left: 0px;
+}
+#instafeed a{
+  opacity: 1 !important;
+  margin: 0px;
+}
+#instafeed {
+  /*max-width: 1000px;*/
+  margin-bottom: 0px;
+}
+#instafeed:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}
+#instafeed a {
+  display: block;
+  float: left;
+  max-width: 180px;
+  margin: 0 0px;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  -webkit-transition: opacity 0.35s ease;
+  -moz-transition: opacity 0.35s ease;
+  transition: opacity 0.35s ease;
+  -webkit-backface-visibility: hidden;
+}
+#instafeed a:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.read-more-link,
+.read-less-link {
+	text-align:right;
+}
+
+/* viewport md or larger */
+@media (min-width: 992px) {
+	.instablock .container
+	{
+		width: 100%;
+	}
+
+	/* set the size of the square profile image to half */
+	#square_profile_image {
+		max-width: 50%;
+		float:left;
+		margin-right: 1em;
+		margin-bottom: 1em;
+	}
+	#square_profile_image_form {
+		max-width: 50%;
+		float: left;
+		margin-right: 1em;
+		margin-bottom: 1em;
+	}
+	#square_profile_image_form #square_profile_image {
+		max-width:100%;
+	}
+}
+@media (max-width: 991px) {
+	#most_recent_images li {
+		position: static !important;
+		width: 50%;
+		display:inline;
+	}
+	#most_recent_images li:nth-child(odd) {
+		clear: both;
+	}
+	#most_recent_images {
+		height: auto !important;
+	}
+	#instafeed a
+	{
+		margin: 0px;
+	}
+}
+.account-settings
+{
+	margin-top: -136px;
+}
+.heading a
+{
+	color: #fff !important;
+}
+.col-sm-4, #maincontent, #maincollaborations
+{
+	padding-right: 0px;
+	padding-left: 0px;
+}
+.at4-icon
+{
+	display: block;
+}
